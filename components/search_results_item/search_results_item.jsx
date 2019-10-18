@@ -354,7 +354,6 @@ export default class SearchResultsItem extends React.PureComponent {
                         }
                     </div>
                     <div
-                        role='application'
                         className='post__content'
                     >
                         {profilePicContainer}

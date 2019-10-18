@@ -637,7 +637,6 @@ export default class EmojiPicker extends React.PureComponent {
                     key={category.id}
                     categoryName={category.name}
                     updateCategoryOffset={this.updateCategoryOffset}
-                    role='application'
                 >
                     {items}
                 </EmojiPickerCategorySection>
@@ -721,7 +720,6 @@ export default class EmojiPicker extends React.PureComponent {
         return (
             <div
                 className='emoji-picker__inner'
-                role='application'
             >
                 <div
                     aria-live='assertive'

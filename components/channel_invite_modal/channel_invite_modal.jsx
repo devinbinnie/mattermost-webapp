@@ -262,9 +262,7 @@ export default class ChannelInviteModal extends React.Component {
                         <span className='name'>{this.props.channel.display_name}</span>
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body
-                    role='application'
-                >
+                <Modal.Body>
                     {inviteError}
                     {content}
                 </Modal.Body>

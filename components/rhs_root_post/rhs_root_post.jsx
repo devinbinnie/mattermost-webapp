@@ -327,7 +327,6 @@ export default class RhsRootPost extends React.PureComponent {
             >
                 <div className='post-right-channel__name'>{channelName}</div>
                 <div
-                    role='application'
                     className='post__content'
                 >
                     <div className='post__img'>

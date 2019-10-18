@@ -438,7 +438,6 @@ export default class RhsComment extends React.PureComponent {
                 onFocus={this.handlePostFocus}
             >
                 <div
-                    role='application'
                     className='post__content'
                 >
                     <div className='post__img'>

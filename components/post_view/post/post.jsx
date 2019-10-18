@@ -307,7 +307,6 @@ export default class Post extends React.PureComponent {
                 aria-atomic={true}
             >
                 <div
-                    role='application'
                     id='postContent'
                     data-testid='postContent'
                     className={'post__content ' + centerClass}

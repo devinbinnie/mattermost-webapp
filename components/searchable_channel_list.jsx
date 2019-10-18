@@ -216,7 +216,6 @@ export default class SearchableChannelList extends React.Component {
             <div className='filtered-user-list'>
                 {input}
                 <div
-                    role='application'
                     ref='channelList'
                     className='more-modal__list'
                 >

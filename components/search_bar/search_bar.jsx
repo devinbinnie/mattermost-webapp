@@ -252,7 +252,6 @@ export default class SearchBar extends React.Component {
                     className='search-form__container'
                 >
                     <form
-                        role='application'
                         className={searchFormClass}
                         onSubmit={this.handleSubmit}
                         style={style.searchForm}

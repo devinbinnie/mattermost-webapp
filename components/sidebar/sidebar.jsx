@@ -759,7 +759,6 @@ export default class Sidebar extends React.PureComponent {
 
                 <div
                     id='lhsList'
-                    role='application'
                     aria-label={ariaLabel}
                     tabIndex='-1'
                     className='sidebar--left__list a11y__region'

@@ -472,9 +472,7 @@ export default class MoreDirectChannels extends React.Component {
                         />
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body
-                    role='application'
-                >
+                <Modal.Body>
                     {body}
                 </Modal.Body>
                 <Modal.Footer className='modal-footer--invisible'>

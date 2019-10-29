@@ -8,6 +8,8 @@ import iconWS from 'images/icon_WS.png';
 
 let requestedNotificationPermission = false;
 
+const notifications: Notification[] = [];
+
 // showNotification displays a platform notification with the configured parameters.
 //
 // If successful in showing a notification, it resolves with a callback to manually close the
@@ -83,6 +85,16 @@ export async function showNotification(
     notification.onerror = () => {
         throw new Error('Notification failed to show.');
     };
+
+    notification.onshow = () => {
+        do {
+            let n = notifications.pop();
+            if (n) {
+                n.close();
+            }
+        } while (notifications.length > 0);
+        notifications.push(notification);
+    }
 
     // Mac desktop app notification dismissal is handled by the OS
     if (!requireInteraction && !UserAgent.isMacApp()) {
